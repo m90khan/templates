@@ -1,0 +1,31 @@
+{
+  "name": "fluur-next-js",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "init": "npm i next@latest react@latest react-dom@latest eslint-config-next@latest",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "doc": "jsdoc -c jsdoc.json"
+  },
+  "dependencies": {
+    "better-docs": "^2.3.2",
+    "jsdoc": "^3.6.7",
+    "next": "^13.2.3",
+    "polished": "^4.1.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "styled-components": "^5.3.1",
+    "zustand": "^4.0.0-rc.1"
+  },
+  "devDependencies": {
+    "better-docs": "^2.3.2",
+    "eslint": "7.32.0",
+    "eslint-config-next": "^13.2.3",
+    "jsdoc": "^3.6.7"
+  },
+  "author": "Fluur",
+  "license": "MIT"
+}

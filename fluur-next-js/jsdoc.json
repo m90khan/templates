@@ -1,0 +1,44 @@
+{
+  "tags": {
+    "allowUnknownTags": true,
+    "dictionaries": ["jsdoc", "closure"]
+  },
+  "source": {
+    "include": ["pages", "components", "utils", "styles"],
+    "includePattern": ".js , .jsx , .ts, .tsx",
+
+    "excludePattern": "(node_modules/|docs | styles | public)"
+  },
+  "plugins": [
+    "plugins/markdown",
+    "better-docs/component",
+    "jsdoc-plugin-typescript"
+  ],
+  "typescript": {
+    "moduleRoot": "pages"
+  },
+  "templates": {
+    "better-docs": {
+      "name": "Fluur Project: Nextjs",
+      "trackingCode": "tracking-code-which-will-go-to-the-HEAD",
+      "navigation": [
+        {
+          "label": "Gitlab",
+          "href": " "
+        },
+        {
+          "label": "Example Application",
+          "href": " "
+        }
+      ]
+    },
+    "cleverLinks": true,
+    "monospaceLinks": true
+  },
+  "opts": {
+    "recurse": true,
+    "template": "./node_modules/better-docs",
+    "destination": "./docs/",
+    "readme": "README.md"
+  }
+}

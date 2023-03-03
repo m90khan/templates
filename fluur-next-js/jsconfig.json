@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "paths": {
+      "@lib/*": ["lib/*"],
+      "@components/*": ["src/components/*"],
+      "@components/Features/*": ["src/components/Features/*"],
+      "@components/UI/*": ["src/components/UI/*"],
+      "@components/Layout/*": ["src/components/Layout/*"],
+      "@content/*": ["src/content/*"],
+      "@modules/*": ["src/modules/*"],
+      "@styles/*": ["styles/*"]
+    }
+  },
+  "include": ["**/*.js", "**/*.jsx"],
+  "exclude": ["node_modules"]
+}
