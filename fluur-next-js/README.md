@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Project
 
 ## Getting Started
 
-### Upgrade React version to latest
+1. Run the below command to use this repo as Nextjs Template. Replace PROJECT_NAME with the project name.
 
-To upgrade you can run the following command:
+```bash
+npx create-next-app PROJECT_NAME --example https://github.com/m90khan/templates/tree/main/fluur-next-js
 
-npm install react@latest react-dom@latest
+```
 
-### Upgrade Next.js version to 12
+2. Run the init command to install latest packages:
 
-To upgrade you can run the following command in the terminal:
+```bash
+npm run init
 
-npm install next@12
+```
 
-## Run Server
-
-First, run the development server:
+3. Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Install Sentry
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+First, run the below commands step by step.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+```bash
+npm install --save @sentry/nextjs
+npx @sentry/wizard -i nextjs
+
+```
+
+Visit the below link for for further information:
+
+```bash
+https://docs.sentry.io/platforms/javascript/guides/nextjs/
+```
+
+Open [http://localhost:4000](http://localhost:4000) with your browser to see the result.
+
+You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:4000/api/hello](http://localhost:4000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
 ## Learn More
 

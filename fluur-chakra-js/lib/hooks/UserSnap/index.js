@@ -1,7 +1,7 @@
 // @ts-nocheck
 import {
   USERSNAP_GLOBAL_API_KEY,
-  USERSNAP_PROJECT_API_KEY,
+  USERSNAP_PROJECT_API_KEY
 } from '@lib/constants';
 import React, { Fragment, useEffect, useState } from 'react';
 
@@ -49,7 +49,7 @@ export const UserSnap = ({ initParams = {} }) => {
             right: '1rem',
             bottom: '1rem',
             background: 'white',
-            cursor: 'pointer',
+            cursor: 'pointer'
           }}
         >
           <svg

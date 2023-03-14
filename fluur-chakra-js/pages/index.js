@@ -1,6 +1,5 @@
 import { Box, Flex, Heading } from '@chakra-ui/react';
 import { useGlobalState } from 'globalState';
-import Head from 'next/head';
 
 export default function Home() {
   const { scene } = useGlobalState();

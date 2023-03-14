@@ -2,14 +2,21 @@
 
 ## Getting Started
 
-First, run the init command to install latest packages:
+1. Run the below command to use this repo as Nextjs Template. Replace PROJECT_NAME with the project name.
+
+```bash
+npx create-next-app PROJECT_NAME --example https://github.com/m90khan/templates/tree/main/fluur-next-ts
+
+```
+
+2. Run the init command to install latest packages:
 
 ```bash
 npm run init
 
 ```
 
-Second, run the development server:
+3. Run the development server:
 
 ```bash
 npm run dev

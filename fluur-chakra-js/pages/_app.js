@@ -1,4 +1,6 @@
 import { Button, ChakraProvider, CSSReset, Heading } from '@chakra-ui/react';
+import { SupressLogs } from '@lib/hooks/SupressLogs';
+import { UserSnap } from '@lib/hooks/UserSnap';
 import GlobalStyles from '@styles/GlobalStyles';
 import customTheme from '@styles/theme';
 
@@ -6,13 +8,10 @@ function MyApp({ Component, pageProps }) {
   return (
     <ChakraProvider theme={customTheme}>
       <GlobalStyles />
-      <Component {...pageProps} />
+      <SupressLogs />
+      <UserSnap />
 
-      {/* <Script
-        id="usersnap"
-        src="/debug/usersnap.js"
-        strategy="beforeInteractive"
-      ></Script> */}
+      <Component {...pageProps} />
     </ChakraProvider>
   );
 }
