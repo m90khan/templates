@@ -23,6 +23,7 @@ server.js
 /public/xrextras/
 .DS_Store
 *.pem
+.env
 
 # debug
 npm-debug.log*
