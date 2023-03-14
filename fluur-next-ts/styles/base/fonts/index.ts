@@ -1,12 +1,12 @@
 import { css } from 'styled-components';
 export const fonts = {
-  primary: 'Menlo',
-  secondary: 'Arial',
+    primary: 'Menlo',
+    secondary: 'Arial',
 };
 
 // prettier-ignore
 export const fontStyles = css`
-@font-face {
+/* @font-face {
   font-family: ${fonts.primary};
   src: url('../fonts/george-x-regular.woff2') format('woff2'),
       url('../fonts/george-x-regular.woff') format('woff');
@@ -40,6 +40,6 @@ export const fontStyles = css`
   font-weight: 200;
   font-style: normal;
   font-display: swap;
-}
+} */
 
 `
